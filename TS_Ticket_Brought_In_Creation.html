@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang = "en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="TS_Ticket_Brought_In_Creation.css">
+  <script src="TS_Ticket_Brought_In_Creation.js"></script>
+
+  <title>Brought In Tech Support Intake Page</title>
+</head>
+
+<body>
+  <h1> New Work Order </h1>
+  <br>
+
+  <form class="Form_TS_Ticket_Brought_In_Creation" action="PlaceHolder.pl" method="post" autocomplete="off">
+
+    <h2> Intake Technician Information </h2>
+
+    <div class="Client_ID">
+      <p>Technician ID Number:
+        <input type="text" name="Client_ID" required>
+      </p>
+    </div>
+
+    <div class="Select_Technician_Type">
+      <p> Type of Technician:
+        <select>
+          <option> Intern </option>
+          <option> Tech Support Staff </option>
+          <option> Other Staff </option>
+        </select>
+      </p>
+    <div>
+
+    <br>
+
+    <h2> Customer Information </h2>
+
+    <div class="Customer_Name">
+      <p> Customer Name:
+        <input type="text" name="Customer_Name" required>
+      </p>
+    </div>
+
+    <div class="Customer_Phone">
+      <p> Customer Phone:
+        <!-- need to setup javascript for minial length -->
+        <input type="text" name="Customer_Phone" maxlength="9">
+      </p>
+    </div>
+
+    <div class="Customer_Email">
+      <p> Customer_Email:
+        <input type="email" name="Customer_Email">
+      </p>
+    </div>
+
+    <br>
+
+    <h2> Gizmo Information </h2>
+
+    <div class="PID">
+      <p> PID
+        <input type="text" name="PID" required>
+      </p>
+    </div>
+
+    <div class="Box_Type">
+      <p> Box _Type
+        <select>
+          <option> Desktop </option>
+          <option> Laptop </option>
+          <option> iMac </option>
+          <option> MacLaptop </option>
+          <option> Other Data Bearing Device </option>
+        </select>
+      </p>
+    </div>
+          
+    <p> (Box_Source) </p>
+    <p> (Date_Accquired) </p>
+    <p> (Current_OS) </p>
+    <p> (Additional_Items_Checked_In) </p>
+    <br>
+
+    <h2> Support Information </h2>
+    <p> (Summary_Of_Issue) </p>
+    <p> (Detailed_Description_Of_Issue) </p>
+    <p> (Backup_Data) </p>
+    <p> (Quoted_Price) </p>
+  </form>
+
+</body>
+
+</html>
