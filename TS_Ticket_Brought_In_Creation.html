@@ -26,10 +26,10 @@
 
     <div class="Select_Technician_Type">
       <p> Type of Technician:
-        <select>
-          <option> Intern </option>
-          <option> Tech Support Staff </option>
-          <option> Other Staff </option>
+        <select required>
+          <option value="Technician_Type_Intern" required> Intern </option>
+          <option value="Technician_Type_TS_Staff"> Tech Support Staff </option>
+          <option value="Technician_Type_Other_Staff"> Other Staff </option>
         </select>
       </p>
     <div>
@@ -62,34 +62,97 @@
     <h2> Gizmo Information </h2>
 
     <div class="PID">
-      <p> PID
+      <p> PID:
         <input type="text" name="PID" required>
       </p>
     </div>
 
-    <div class="Box_Type">
-      <p> Box _Type
-        <select>
-          <option> Desktop </option>
-          <option> Laptop </option>
-          <option> iMac </option>
-          <option> MacLaptop </option>
-          <option> Other Data Bearing Device </option>
+    <div class="Select_Box_Type">
+      <p> Box Type:
+        <select required>
+          <option value="Box_Type_Desktop"> Desktop </option>
+          <option value="Box_Type_Laptop"> Laptop </option>
+          <option value="Box_Type_iMac"> iMac </option>
+          <option value="Box_Type_MacLaptop"> MacLaptop </option>
+          <option value="Box_Type_Other_Data"> Other Data Bearing Device </option>
         </select>
       </p>
     </div>
-          
-    <p> (Box_Source) </p>
-    <p> (Date_Accquired) </p>
-    <p> (Current_OS) </p>
-    <p> (Additional_Items_Checked_In) </p>
+
+    <div class="Box_Source">
+      <p> Box Source:
+        <select required>
+          <option value=""> Adoption </option>
+          <option value=""> Hardware Grants </option>
+          <option value="" selected> Store </option>
+          <option value=""> Internal </option>
+          <option value=""> Donated </option>
+          <option value=""> External </option>
+        </select>
+      </p>
+    </div>
+
+    <div class="Date_Accquired">
+      <p> Date Accquired:
+        <input type="date" name="Date_Accquired" required>
+      </p>
+    <div>
+
+    <div class="Current_OS">
+      <p> Current OS:
+        <select required>
+          <option value="Current_OS_Linux_Mint" selected> Linux Mint </option>
+          <option value="Current_OS_MacOS"> MacOS </option>
+          <option value="Current_OS_Windows"> Windows </option>
+          <option value="Current_OS_Other_OS"> Other OS </option>
+          <option value="Current_OS_No_OS"> No OS </option>
+          <option value="Current_OS_Other_Linux_Debian"> Other Linux [Debian] </option>
+          <option value="Current_OS_Other_Linux_NonDebian"> Other Linux [Non-Debian] </option>
+        </select>
+      </p>
+    </div>
+
+    <div class="Additional_Items_Checked_In">
+      <p> Additional Items Checked In:
+        <input type="" name="Additional_Items_Checked_In">
+      </p>
+    </div>
+
     <br>
 
     <h2> Support Information </h2>
-    <p> (Summary_Of_Issue) </p>
-    <p> (Detailed_Description_Of_Issue) </p>
-    <p> (Backup_Data) </p>
-    <p> (Quoted_Price) </p>
+
+    <div class="Summary_Of_Issue">
+      <p> Summary Of Issue:
+        <input type="text" name="Summary_Of_Issue" required>
+      </p>
+    </div>
+
+    <div class="Backup_Data">
+      <p> Backup Data:
+        <select>
+          <option value="" selected> Ask if Data needs to be Backed Up. </option>
+          <option value="Backup_Data_Yes"> Yes </option>
+          <option value="Backup_Data_No"> No </option>
+        </select>
+    </p>
+    </div>
+
+    <div class="Quoted_Price">
+      <p> Quoted Price: $
+        <input type="text" required maxlength="3">
+        .00
+      </p>
+    </div>
+
+    <div class="Detailed_Description_Of_Issue">
+      <p> Detailed Description Of Issue:
+        <br>
+        <textarea rows="20" cols="75%" required>
+        </textarea>
+      </p>
+    </div>
+
   </form>
 
 </body>

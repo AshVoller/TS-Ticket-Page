@@ -10,3 +10,12 @@ var Customer_Email
 
 var PID
 var Box _Type
+var Box_Source
+var Date_Accquired
+var Current_OS
+var Additional_Items_Checked_In
+
+var Summary_Of_Issue
+var Detailed_Description_Of_Issue
+var Backup_Data
+var Quoted_Price
