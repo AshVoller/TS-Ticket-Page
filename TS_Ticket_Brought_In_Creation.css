@@ -1,1 +1,57 @@
-/*PlaceHolder*/
+
+.Select_Technician_Type {
+width: 100pdx;
+}
+
+.w3-container
+{
+  background-color: #F4F6F6;
+}
+
+header, .full-width {
+  width: 100%;
+  background: #white;
+  top: 0;
+  left:0;
+}
+
+.wrap {
+  width: 80%;
+  max-width: 24em;
+  margin: 0 auto;
+  padding: 0.25em 0.625em;
+}
+
+h1 {
+  display:block;
+  font-size: 30px;
+  font-style: bold;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 500px;
+  font-family: 'Source Sans Pro', bold;
+  border-bottom: solid black;
+  border-top: solid black;
+}
+
+h2 {
+	color: #black;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  margin: 0; padding: 0; border: 0;
+  font-family: 'Source Sans Pro', cursive;
+  font-size: 20px;
+}
+
+p {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+body {
+	background-color:  white;
+	font: 16px 'SourceSansPro'; color: #black ; line-height: 20px;
+	padding-left: 0px;
+  padding-top: 78px;
+  box-sizing: border-box;
+}
