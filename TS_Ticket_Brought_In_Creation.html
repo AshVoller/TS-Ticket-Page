@@ -18,13 +18,13 @@
 
     <div class="Class_Input">
       <label>Technician ID Number:
-        <input type="text" name="Client_ID" required>
+        <input type="text" id="Technician_ID_Number" required>
       </label>
     </div>
 
     <div class="Class_Select">
       <label> Type of Technician:
-        <select required>
+        <select id="Type_Of_Technician" required>
           <option value="Technician_Type_Intern" required> Intern </option>
           <option value="Technician_Type_TS_Staff"> Tech Support Staff </option>
           <option value="Technician_Type_Other_Staff"> Other Staff </option>
@@ -38,20 +38,20 @@
 
     <div class="Class_Input">
       <label> Customer Name:
-        <input type="text" name="Customer_Name" required>
+        <input type="text" id="Customer_Name" required>
       </label>
     </div>
 
     <div class="Class_Input">
       <label> Customer Phone:
         <!-- need to setup javascript for minial length -->
-        <input type="text" name="Customer_Phone" maxlength="9">
+        <input type="text" id="Customer_Phone" maxlength="9">
       </label>
     </div>
 
     <div class="Class_Input">
       <label> Customer_Email:
-        <input type="email" name="Customer_Email">
+        <input type="email" id="Customer_Email">
       </label>
     </div>
 
@@ -61,13 +61,13 @@
 
     <div class="Class_Input">
       <label> PID:
-        <input type="text" name="PID" required>
+        <input type="text" id="PID" required>
       </label>
     </div>
 
-    <div id="Class_Select">
+    <div class="Class_Select">
       <label> Box Type:
-        <select required>
+        <select id="Box_Type" required>
           <option value=""></option>
           <option value="Box_Type_Desktop"> Desktop </option>
           <option value="Box_Type_Laptop"> Laptop </option>
@@ -80,7 +80,7 @@
 
     <div class="Class_Select">
       <label> Box Source:
-        <select required>
+        <select id="Box_Source" required>
           <option value="" selected></option>
           <option value="Box_Source_Adoption"> Adoption </option>
           <option value="Box_Source_Hardware_Grants"> Hardware Grants </option>
@@ -94,13 +94,13 @@
 
     <div class="Class_Input">
       <label> Date Accquired:
-        <input type="date" name="Date_Accquired">
+        <input type="date" id="Date_Accquired">
       </label>
     <div>
 
     <div class="Class_Select">
       <label> Current OS:
-        <select required>
+        <select id="Current_OS" required>
           <option value="" selected> Linux Mint </option>
           <option value="Current_OS_Linux_Mint"> Linux Mint </option>
           <option value="Current_OS_MacOS"> MacOS </option>
@@ -115,7 +115,7 @@
 
     <div class="Class_Input">
       <label> Additional Items Checked In:
-        <input type="" name="Additional_Items_Checked_In">
+        <input type="text" id="Additional_Items_Checked_In">
       </label>
     </div>
 
@@ -125,13 +125,13 @@
 
     <div class="Class_Input">
       <label> Summary Of Issue:
-        <input type="text" name="Summary_Of_Issue"  required>
+        <input type="text" id="Summary_Of_Issue"  required>
       </label>
     </div>
 
     <div class="Class_Select">
       <label> Backup Data:
-        <select>
+        <select id="Backup_Data">
           <option value="" selected> Does data needs to be backed up? </option>
           <option value="Backup_Data_Yes"> Yes </option>
           <option value="Backup_Data_No"> No </option>
@@ -141,7 +141,7 @@
 
     <div class="Class_Input">
       <label> Quoted Price: $
-        <input type="text" required maxlength="3">
+        <input type="text" id="Quoted_Price" required maxlength="3">
         .00
       </label>
     </div>
@@ -149,13 +149,13 @@
     <div class="Class_Textarea">
       <label> Detailed Description Of Issue:
         <br>
-        <textarea rows="20" cols="75%" required>
+        <textarea rows="20" cols="75%" id="Detailed_Description_Of_Issue" required>
         </textarea>
       </label>
     </div>
 
     <div class="Class_Button">
-      <input type="submit" id="Submit_Ticket" value="Next">
+      <input type="submit" id="Submit_Ticket" value="Review Ticket">
     </div>
 
   </form>
