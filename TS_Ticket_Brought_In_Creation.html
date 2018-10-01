@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<html lang = "en">
+<html>
 
 <head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="TS_Ticket_Brought_In_Creation.css">
-  <script src="TS_Ticket_Brought_In_Creation.js"></script>
-
   <title>Brought In Tech Support Intake Page</title>
 </head>
 
@@ -14,94 +12,97 @@
   <h1> New Work Order </h1>
   <br>
 
-  <form class="Form_TS_Ticket_Brought_In_Creation" action="PlaceHolder.pl" method="post" autocomplete="off">
+  <form id="Form_TS_Ticket_Brought_In_Creation" method="post" autocomplete="off">
 
     <h2> Intake Technician Information </h2>
 
-    <div class="Client_ID">
-      <p>Technician ID Number:
+    <div class="Class_Input">
+      <label>Technician ID Number:
         <input type="text" name="Client_ID" required>
-      </p>
+      </label>
     </div>
 
-    <div class="Select_Technician_Type">
-      <p> Type of Technician:
+    <div class="Class_Select">
+      <label> Type of Technician:
         <select required>
           <option value="Technician_Type_Intern" required> Intern </option>
           <option value="Technician_Type_TS_Staff"> Tech Support Staff </option>
           <option value="Technician_Type_Other_Staff"> Other Staff </option>
         </select>
-      </p>
+      </label>
     <div>
 
     <br>
 
     <h2> Customer Information </h2>
 
-    <div class="Customer_Name">
-      <p> Customer Name:
+    <div class="Class_Input">
+      <label> Customer Name:
         <input type="text" name="Customer_Name" required>
-      </p>
+      </label>
     </div>
 
-    <div class="Customer_Phone">
-      <p> Customer Phone:
+    <div class="Class_Input">
+      <label> Customer Phone:
         <!-- need to setup javascript for minial length -->
         <input type="text" name="Customer_Phone" maxlength="9">
-      </p>
+      </label>
     </div>
 
-    <div class="Customer_Email">
-      <p> Customer_Email:
+    <div class="Class_Input">
+      <label> Customer_Email:
         <input type="email" name="Customer_Email">
-      </p>
+      </label>
     </div>
 
     <br>
 
     <h2> Gizmo Information </h2>
 
-    <div class="PID">
-      <p> PID:
+    <div class="Class_Input">
+      <label> PID:
         <input type="text" name="PID" required>
-      </p>
+      </label>
     </div>
 
-    <div class="Select_Box_Type">
-      <p> Box Type:
+    <div id="Class_Select">
+      <label> Box Type:
         <select required>
+          <option value=""></option>
           <option value="Box_Type_Desktop"> Desktop </option>
           <option value="Box_Type_Laptop"> Laptop </option>
           <option value="Box_Type_iMac"> iMac </option>
           <option value="Box_Type_MacLaptop"> MacLaptop </option>
           <option value="Box_Type_Other_Data"> Other Data Bearing Device </option>
         </select>
-      </p>
+      </label>
     </div>
 
-    <div class="Box_Source">
-      <p> Box Source:
+    <div class="Class_Select">
+      <label> Box Source:
         <select required>
-          <option value=""> Adoption </option>
-          <option value=""> Hardware Grants </option>
-          <option value="" selected> Store </option>
-          <option value=""> Internal </option>
-          <option value=""> Donated </option>
-          <option value=""> External </option>
+          <option value="" selected></option>
+          <option value="Box_Source_Adoption"> Adoption </option>
+          <option value="Box_Source_Hardware_Grants"> Hardware Grants </option>
+          <option value="Box_Source_Store"> Store </option>
+          <option value="Box_Source_Internal"> Internal </option>
+          <option value="Box_Source_Donated"> Donated </option>
+          <option value="Box_Source_External"> External </option>
         </select>
-      </p>
+      </label>
     </div>
 
-    <div class="Date_Accquired">
-      <p> Date Accquired:
+    <div class="Class_Input">
+      <label> Date Accquired:
         <input type="date" name="Date_Accquired">
-      </p>
+      </label>
     <div>
 
-    <div class="Current_OS">
-      <p> Current OS:
+    <div class="Class_Select">
+      <label> Current OS:
         <select required>
-          <option value="Current_OS_Linux_Mint" selected> Linux Mint </option>
+          <option value="" selected> Linux Mint </option>
+          <option value="Current_OS_Linux_Mint"> Linux Mint </option>
           <option value="Current_OS_MacOS"> MacOS </option>
           <option value="Current_OS_Windows"> Windows </option>
           <option value="Current_OS_Other_OS"> Other OS </option>
@@ -109,56 +110,56 @@
           <option value="Current_OS_Other_Linux_Debian"> Other Linux [Debian] </option>
           <option value="Current_OS_Other_Linux_NonDebian"> Other Linux [Non-Debian] </option>
         </select>
-      </p>
+      </label>
     </div>
 
-    <div class="Additional_Items_Checked_In">
-      <p> Additional Items Checked In:
+    <div class="Class_Input">
+      <label> Additional Items Checked In:
         <input type="" name="Additional_Items_Checked_In">
-      </p>
+      </label>
     </div>
 
     <br>
 
     <h2> Support Information </h2>
 
-    <div class="Summary_Of_Issue">
-      <p> Summary Of Issue:
-        <input type="text" name="Summary_Of_Issue" required>
-      </p>
+    <div class="Class_Input">
+      <label> Summary Of Issue:
+        <input type="text" name="Summary_Of_Issue"  required>
+      </label>
     </div>
 
-    <div class="Backup_Data">
-      <p> Backup Data:
+    <div class="Class_Select">
+      <label> Backup Data:
         <select>
-          <option value="" selected> Ask if Data needs to be Backed Up. </option>
+          <option value="" selected> Does data needs to be backed up? </option>
           <option value="Backup_Data_Yes"> Yes </option>
           <option value="Backup_Data_No"> No </option>
         </select>
-    </p>
+    </label>
     </div>
 
-    <div class="Quoted_Price">
-      <p> Quoted Price: $
+    <div class="Class_Input">
+      <label> Quoted Price: $
         <input type="text" required maxlength="3">
         .00
-      </p>
+      </label>
     </div>
 
-    <div class="Detailed_Description_Of_Issue">
-      <p> Detailed Description Of Issue:
+    <div class="Class_Textarea">
+      <label> Detailed Description Of Issue:
         <br>
         <textarea rows="20" cols="75%" required>
         </textarea>
-      </p>
+      </label>
     </div>
 
-    <div class="Submit_Ticket">
-      <input type="submit" name="Submit_Ticket" value="Next">
+    <div class="Class_Button">
+      <input type="submit" id="Submit_Ticket" value="Next">
     </div>
 
   </form>
-
+  <script src="TS_Ticket_Brought_In_Creation.js"></script>
 </body>
 
 </html>
