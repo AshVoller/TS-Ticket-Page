@@ -13,146 +13,151 @@
   <br>
 
   <form id="Form_TS_Ticket_Brought_In_Creation" method="post" autocomplete="off">
+       <!-- Moved to line 20 -->
+    <!-- <h2> Intake Technician Information </h2> -->
 
-    <h2> Intake Technician Information </h2>
+    <div class="row"> <!-- Row -->
+          <div class="block">
+           <h2> Intake Technician Information </h2>
+           <label>Technician ID Number:
+             <input type="text" id="Technician_ID_Number" required>
+             <div> Type of Technician:
+               <select id="Type_Of_Technician" required>
+                 <option value="Technician_Type_Intern" required> Intern </option>
+                 <option value="Technician_Type_TS_Staff"> Tech Support Staff </option>
+                 <option value="Technician_Type_Other_Staff"> Other Staff </option>
+               </select>
+             </div>
+          </label>
+         </div>
 
-    <div class="Class_Input">
-      <label>Technician ID Number:
-        <input type="text" id="Technician_ID_Number" required>
-      </label>
+         <div class="block">
+              <h2> Customer Information </h2>
+
+              <div class="Class_Input">
+                <label> Customer Name:
+                  <input type="text" id="Customer_Name" required>
+                </label>
+              </div>
+
+              <div class="Class_Input">
+                <label> Customer Phone:
+                  <!-- need to setup javascript for minial length -->
+                  <input type="text" id="Customer_Phone" maxlength="9">
+                </label>
+              </div>
+
+              <div class="Class_Input">
+                <label> Customer_Email:
+                  <input type="email" id="Customer_Email">
+                </label>
+              </div>
+         </div>
     </div>
 
-    <div class="Class_Select">
-      <label> Type of Technician:
-        <select id="Type_Of_Technician" required>
-          <option value="Technician_Type_Intern" required> Intern </option>
-          <option value="Technician_Type_TS_Staff"> Tech Support Staff </option>
-          <option value="Technician_Type_Other_Staff"> Other Staff </option>
-        </select>
-      </label>
-    <div>
+    <!-- ??? -->
+    <!-- <br> -->
+    <div class="row">
+          <div class="block">
+              <h2> Gizmo Information </h2>
 
-    <br>
+              <div class="Class_Input">
+                <label> PID:
+                  <input type="text" id="PID" required>
+                </label>
+              </div>
 
-    <h2> Customer Information </h2>
+              <div class="Class_Select">
+                <label> Box Type:
+                  <select id="Box_Type" required>
+                    <option value=""></option>
+                    <option value="Box_Type_Desktop"> Desktop </option>
+                    <option value="Box_Type_Laptop"> Laptop </option>
+                    <option value="Box_Type_iMac"> iMac </option>
+                    <option value="Box_Type_MacLaptop"> MacLaptop </option>
+                    <option value="Box_Type_Other_Data"> Other Data Bearing Device </option>
+                  </select>
+                </label>
+              </div>
 
-    <div class="Class_Input">
-      <label> Customer Name:
-        <input type="text" id="Customer_Name" required>
-      </label>
-    </div>
+              <div class="Class_Select">
+                <label> Box Source:
+                  <select id="Box_Source" required>
+                    <option value="" selected></option>
+                    <option value="Box_Source_Adoption"> Adoption </option>
+                    <option value="Box_Source_Hardware_Grants"> Hardware Grants </option>
+                    <option value="Box_Source_Store"> Store </option>
+                    <option value="Box_Source_Internal"> Internal </option>
+                    <option value="Box_Source_Donated"> Donated </option>
+                    <option value="Box_Source_External"> External </option>
+                  </select>
+                </label>
+              </div>
 
-    <div class="Class_Input">
-      <label> Customer Phone:
-        <!-- need to setup javascript for minial length -->
-        <input type="text" id="Customer_Phone" maxlength="9">
-      </label>
-    </div>
+               <div class="Class_Input">
+                <label> Date Accquired:
+                  <input type="date" id="Date_Accquired">
+                </label>
+               </div>
 
-    <div class="Class_Input">
-      <label> Customer_Email:
-        <input type="email" id="Customer_Email">
-      </label>
-    </div>
+              <div class="Class_Select">
+                <label> Current OS:
+                  <select id="Current_OS" required>
+                    <option value="" selected> Linux Mint </option>
+                    <option value="Current_OS_Linux_Mint"> Linux Mint </option>
+                    <option value="Current_OS_MacOS"> MacOS </option>
+                    <option value="Current_OS_Windows"> Windows </option>
+                    <option value="Current_OS_Other_OS"> Other OS </option>
+                    <option value="Current_OS_No_OS"> No OS </option>
+                    <option value="Current_OS_Other_Linux_Debian"> Other Linux [Debian] </option>
+                    <option value="Current_OS_Other_Linux_NonDebian"> Other Linux [Non-Debian] </option>
+                  </select>
+                </label>
+              </div>
 
-    <br>
+              <div class="Class_Input">
+                <label> Additional Items Checked In:
+                  <input type="text" id="Additional_Items_Checked_In">
+                </label>
+              </div>
+         </div>
 
-    <h2> Gizmo Information </h2>
 
-    <div class="Class_Input">
-      <label> PID:
-        <input type="text" id="PID" required>
-      </label>
-    </div>
+        <div class="block">
+              <h2> Support Information </h2>
 
-    <div class="Class_Select">
-      <label> Box Type:
-        <select id="Box_Type" required>
-          <option value=""></option>
-          <option value="Box_Type_Desktop"> Desktop </option>
-          <option value="Box_Type_Laptop"> Laptop </option>
-          <option value="Box_Type_iMac"> iMac </option>
-          <option value="Box_Type_MacLaptop"> MacLaptop </option>
-          <option value="Box_Type_Other_Data"> Other Data Bearing Device </option>
-        </select>
-      </label>
-    </div>
+              <div class="Class_Input">
+                <label> Summary Of Issue:
+                  <input type="text" id="Summary_Of_Issue"  required>
+                </label>
+              </div>
 
-    <div class="Class_Select">
-      <label> Box Source:
-        <select id="Box_Source" required>
-          <option value="" selected></option>
-          <option value="Box_Source_Adoption"> Adoption </option>
-          <option value="Box_Source_Hardware_Grants"> Hardware Grants </option>
-          <option value="Box_Source_Store"> Store </option>
-          <option value="Box_Source_Internal"> Internal </option>
-          <option value="Box_Source_Donated"> Donated </option>
-          <option value="Box_Source_External"> External </option>
-        </select>
-      </label>
-    </div>
+              <div class="Class_Select">
+                <label> Backup Data:
+                  <select id="Backup_Data">
+                    <option value="" selected> Does data needs to be backed up? </option>
+                    <option value="Backup_Data_Yes"> Yes </option>
+                    <option value="Backup_Data_No"> No </option>
+                  </select>
+              </label>
+              </div>
 
-    <div class="Class_Input">
-      <label> Date Accquired:
-        <input type="date" id="Date_Accquired">
-      </label>
-    <div>
+              <div class="Class_Input">
+                <label> Quoted Price: $
+                  <input type="text" id="Quoted_Price" required maxlength="3">
+                  .00
+                </label>
+              </div>
+         </div>
+     </div>
+     <div class="textbox">
+       <label> Detailed Description Of Issue:
+         <br>
+         <textarea rows="20" cols="75%" id="Detailed_Description_Of_Issue" required>
+         </textarea>
+       </label>
+     </div>
 
-    <div class="Class_Select">
-      <label> Current OS:
-        <select id="Current_OS" required>
-          <option value="" selected> Linux Mint </option>
-          <option value="Current_OS_Linux_Mint"> Linux Mint </option>
-          <option value="Current_OS_MacOS"> MacOS </option>
-          <option value="Current_OS_Windows"> Windows </option>
-          <option value="Current_OS_Other_OS"> Other OS </option>
-          <option value="Current_OS_No_OS"> No OS </option>
-          <option value="Current_OS_Other_Linux_Debian"> Other Linux [Debian] </option>
-          <option value="Current_OS_Other_Linux_NonDebian"> Other Linux [Non-Debian] </option>
-        </select>
-      </label>
-    </div>
-
-    <div class="Class_Input">
-      <label> Additional Items Checked In:
-        <input type="text" id="Additional_Items_Checked_In">
-      </label>
-    </div>
-
-    <br>
-
-    <h2> Support Information </h2>
-
-    <div class="Class_Input">
-      <label> Summary Of Issue:
-        <input type="text" id="Summary_Of_Issue"  required>
-      </label>
-    </div>
-
-    <div class="Class_Select">
-      <label> Backup Data:
-        <select id="Backup_Data">
-          <option value="" selected> Does data needs to be backed up? </option>
-          <option value="Backup_Data_Yes"> Yes </option>
-          <option value="Backup_Data_No"> No </option>
-        </select>
-    </label>
-    </div>
-
-    <div class="Class_Input">
-      <label> Quoted Price: $
-        <input type="text" id="Quoted_Price" required maxlength="3">
-        .00
-      </label>
-    </div>
-
-    <div class="Class_Textarea">
-      <label> Detailed Description Of Issue:
-        <br>
-        <textarea rows="20" cols="75%" id="Detailed_Description_Of_Issue" required>
-        </textarea>
-      </label>
-    </div>
 
     <div class="Class_Button">
       <input type="submit" id="Submit_Ticket" value="Review Ticket">
