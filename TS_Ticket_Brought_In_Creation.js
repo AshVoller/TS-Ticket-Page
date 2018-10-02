@@ -9,21 +9,19 @@ window.addEventListener('load', function() {
     const keys = Object.keys(e.currentTarget);
 
     for(let i=0; i< keys.length; i++) {
-      const key = keys[i];
-      const element = e.currentTarget[key];
+      let key = keys[i];
+      let element = e.currentTarget[key];
       if (element.type !== 'submit') {
-        const label = element.labels[0].childNodes[0].textContent;
+        const label = element.labels[0].childNodes[0].textContent.substring(0, element.labels[0].childNodes[0].textContent.indexOf(':'));
         const value = element.value;
 
         formInfo[label] = value;
       }
-
     }
 
     console.log(formInfo)
   })
 })
-
 /*
 var Client_ID
 var Tech_First_Name
