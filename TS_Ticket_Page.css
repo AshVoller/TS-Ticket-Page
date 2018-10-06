@@ -1,0 +1,64 @@
+#Title_Line1 {text-align: center;}
+#Title_Line2 {text-align: center;}
+#RT_Number {display: inline;}
+
+#Customer_Information {text-align: center;}
+
+#Customer_Information_table{width: 80%; margin-left: auto; margin-right: auto;}
+  #Customer_Row1{width: auto;}
+    #Customer_Name_Col{width: auto; text-align: left;}
+      #Customer_Name {display: inline; text-align: left;}
+  #Customer_Row2 {width: auto;}
+    #Customer_Phone_Col{width: 50%; text-align: left;}
+      #Customer_Phone {display: inline; text-align: center;}
+    #Customer_Email_Col {width: 50%;  text-align: left;}
+      #Customer_Email {display: inline; text-align: left;}
+
+#Technician_Information {text-align: center;}
+  #Technician_Information_Table {width: 80%; margin-left: auto; margin-right: auto;}
+    #Technician_Row1 {width: auto;}
+      #Technician_ID_Number_Col {width: 50%; text-align: left;}
+        #Technician_ID_Number {display: inline; text-align: center;}
+      #Type_Of_Tech_Col {width: 50%; text-align: left;}
+        #Type_Of_Tech {display: inline; text-align: center;}
+
+#Gizmo_Information{text-align: center;}
+  #Gizmo_Information_Table {width: 80%; margin-left: auto; margin-right: auto;}
+    #Gizmo_Row1 {width: auto;}
+      #PID_Col {width: 50%; text-align: left;}
+        #PID {display: inline; text-align: center;}
+      #Date_Accquired_Col {width: 50%; text-align: left;}
+        #Date_Accquired {display: inline; ; text-align: center;}
+    #Gizmo_Row2 {width: auto;}
+      #Box_Type_Col {width: 50%; text-align: left;}
+        #Box_Type {display: inline; text-align: center;}
+      #Box_Source_Col {width: 50%; text-align: left;}
+        #Box_Source {display: inline; text-align: center;}
+    #Gizmo_Row3 {width: auto;}
+      #Current_OS_Col {width: 50%; text-align: left;}
+        #Current_OS {display: inline; text-align: center;}
+      #Backup_Data_Col {width: 50%; text-align: left;}
+        #Backup_Data {display: inline; text-align: center;}
+
+#Support_Information {text-align: center;}
+  #Support_Information_Table {width: 80%; margin-left: auto; margin-right: auto;}
+    #Support1_Row1 {width: auto;}
+      #Summary_Of_Issue_Row {width: 100%; text-align: left;}
+    #Support1_Row2 {width: auto;}
+      #Summary_Of_Issue {width: 100%; text-align: left;}
+    #Support1_Row3 {width: auto;}
+      #Detailed_Description_Of_Issue_Row {width: 100%; text-align: left;}
+    #Support1_Row4 {width: auto;}
+      #Detailed_Description_Of_Issue {width: 100%; text-align: left;}
+
+  #Support_Information_Table2 {width: 80%; margin-left: auto; margin-right: auto;}
+    #Support2_Row1 {width: auto;}
+      #Quoted_Price_Col {width: 100%; text-align: left;}
+        #Quoted_Price {display: inline; text-align: left;}
+
+#Signature_Table {width: 80%; margin-left: auto; margin-right: auto; border: 2px solid black; border-collapse: collapse;}
+  #Signature_Row {width: auto;}
+    #Signature_Col {width: 10%; text-align: left;}
+    #Signature {width: 65%; text-align: left;}
+    #Signature_Date_Col {width: 5%; text-align: left; border-left: 2px solid black; border-collapse: collapse;}
+    #Signature_Date {width: 15%; text-align: center;}

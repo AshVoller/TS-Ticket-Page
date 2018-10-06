@@ -1,25 +1,35 @@
-const formInfo = {};
+const Form_Data = {};
+const Form_List = [
+  //list of id we need values from
+  'Technician_ID_Number',
+  'Type_Of_Technician',
+  'Customer_Name',
+  'Customer_Phone',
+  'Customer_Email',
+  'PID',
+  'Box_Type',
+  'Box_Source',
+  'Date_Accquired',
+  'Current_OS',
+  'Additional_Items_Checked_In',
+  'Summary_Of_Issue',
+  'Backup_Data',
+  'Quoted_Price',
+  'Detailed_Description_Of_Issue'
+];
 
 window.addEventListener('load', function() {
   const form = document.getElementById('Form_TS_Ticket_Brought_In_Creation');
-
   form.addEventListener('submit', function (e) {
-    console.log(e);
     e.preventDefault();
-    const keys = Object.keys(e.currentTarget);
+    console.log("it worked");
 
-    for(let i=0; i< keys.length; i++) {
-      let key = keys[i];
-      let element = e.currentTarget[key];
-      if (element.type !== 'submit') {
-        const label = element.labels[0].childNodes[0].textContent.substring(0, element.labels[0].childNodes[0].textContent.indexOf(':'));
-        const value = element.value;
-
-        formInfo[label] = value;
-      }
+    for(let i=0;i<Form_List.length;i++) {
+      const Form_Label = Form_List[i];
+      const Form_Value = document.getElementById(Form_List[i]).value;
+      Form_Data[Form_Label] = Form_Value;
+      console.log(Form_Data);
     }
-
-    console.log(formInfo)
   })
 })
 /*
