@@ -20,16 +20,24 @@ const Form_List = [
 
 window.addEventListener('load', function() {
   const form = document.getElementById('Form_TS_Ticket_Brought_In_Creation');
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    console.log("it worked");
 
     for(let i=0;i<Form_List.length;i++) {
       const Form_Label = Form_List[i];
       const Form_Value = document.getElementById(Form_List[i]).value;
       Form_Data[Form_Label] = Form_Value;
-      console.log(Form_Data);
     }
+    console.log(Form_Data);
+    //converting Form_Data into JSON object
+    let JSON_Data = JSON.stringify(Form_Data);
+    console.log(JSON_Data);
+    //See https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding
+    let JSON_Data_B64  = window.btoa(JSON_Data)
+    console.log(JSON_Data_B64);
+
+    window.location.href = "TS_Ticket_Page.html/?JSON_Data_B64=" + JSON_Data_B64;
   })
 })
 /*
