@@ -20,7 +20,7 @@
       #Technician_ID_Number_Col {width: 50%; text-align: left;}
         #Technician_ID_Number {display: inline; text-align: center;}
       #Type_Of_Tech_Col {width: 50%; text-align: left;}
-        #Type_Of_Tech {display: inline; text-align: center;}
+        #Type_Of_Technician {display: inline; text-align: center;}
 
 #Gizmo_Information{text-align: center;}
   #Gizmo_Information_Table {width: 80%; margin-left: auto; margin-right: auto;}
@@ -39,6 +39,9 @@
         #Current_OS {display: inline; text-align: center;}
       #Backup_Data_Col {width: 50%; text-align: left;}
         #Backup_Data {display: inline; text-align: center;}
+    #Gizmo_Row4 {width: auto;}
+      #Additional_Items_Checked_In_Col {width: 50%; text-align: left;}
+        #Additional_Items_Checked_In {display: inline; text-align: center;}
 
 #Support_Information {text-align: center;}
   #Support_Information_Table {width: 80%; margin-left: auto; margin-right: auto;}
